@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="format-detection" content="telephone=no,email=no,address=no,date=no" />
+  <meta name="flexible" content="initial-dpr=1,maximum-dpr=1" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height"
+  />
+  <link rel="icon" href="###" type="images/x-icon" />
+  <link rel="shortcut icon" href="##" type="images/x-icon" />
+  <title>考勤管理</title>
+  <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./libs/oneui.min.css">
+  <style>
+    body {
+      background-color: #ffffff;
+    }
+
+    .me_header {
+      width: 100%;
+      padding: 30px 0;
+    }
+
+    .me_header>h5 {
+      padding-top: 10px;
+    }
+
+    .list-group-item:first-child,
+    .list-group-item:last-child {
+      border-radius: 0;
+    }
+
+    a.list-group-item {
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    .fa-2x {
+      font-size: 20px;
+    }
+
+    .list-group-item {
+      position: relative;
+    }
+
+    .list-group-item .fa {
+      position: absolute;
+      right: 15px;
+    }
+
+    .table {
+      background-color: #ffffff;
+      width: 96%;
+      margin: 15px auto;
+    }
+
+    .table th {
+      width: 20%;
+    }
+
+    .table>tbody>tr>th,
+    .table>tfoot>tr>th,
+    .table>thead>tr>th {
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .table>tbody td {
+      font-size: 12px;
+    }
+
+    #DataTables_Table_1,
+    #DataTables_Table_2 {
+      display: none;
+    }
+
+    .list-group-item.active>.badge, a.list-group-item:focus, a.list-group-item:hover {
+      color: #646464;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="me_header">
+      <h4>联合锐思会议云平台</h4>
+      <h5>考勤管理</h5>
+    </div>
+  </div>
+
+  <div class="list-group" id="list_group">
+    <a href="#" class="list-group-item">
+      大货人员出勤统计
+      <i class="fa fa-angle-right fa-2x"></i>
+    </a>
+
+    <table class="table table-bordered js-dataTable-full dataTable no-footer" id="DataTables_Table_1" role="grid">
+      <thead>
+        <tr role="row">
+          <th class="text-center">ID</th>
+          <th class="text-center">日期</th>
+          <th class="text-center">类别</th>
+          <th class="text-center">到岗人数</th>
+          <th class="text-center">总人数</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <a href="#" class="list-group-item">
+      童装人员出勤统计
+      <i class="fa fa-angle-right fa-2x"></i>
+    </a>
+
+    <table class="table table-bordered js-dataTable-full dataTable no-footer" id="DataTables_Table_2" role="grid">
+      <thead>
+        <tr role="row">
+          <th class="text-center">ID</th>
+          <th class="text-center">日期</th>
+          <th class="text-center">类别</th>
+          <th class="text-center">到岗人数</th>
+          <th class="text-center">总人数</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+        <tr role="row" class="even">
+          <td class="text-center">1</td>
+          <td class="text-center">3月26日</td>
+          <td class="text-center">兼职</td>
+          <td class="text-center">0</td>
+          <td class="text-center">0</td>
+        </tr>
+
+      </tbody>
+    </table>
+  </div>
+
+  <script src="./libs/jquery/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    $(function () {
+      $("#list_group .list-group-item").click(function () {
+        var _this = $(this);
+        var fa = _this.children(".fa");
+        if (fa.hasClass("fa-angle-right")) {
+          fa.removeClass("fa-angle-right").addClass("fa-angle-down");
+          _this.next(".table").fadeIn();
+        } else {
+          fa.removeClass("fa-angle-down").addClass("fa-angle-right");
+          _this.next(".table").fadeOut();
+        }
+      })
+    })
+  </script>
+</body>
+
+</html>
